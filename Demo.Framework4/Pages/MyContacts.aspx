@@ -50,7 +50,9 @@
 
         <%-- GridView to display the list --%>
         <asp:GridView ID="gvPersons" runat="server" AutoGenerateColumns="False" OnRowCommand="gvPersons_RowCommand" DataKeyNames="Id"
-            CellPadding="4" ForeColor="#333333" GridLines="None" Width="80%" EnableViewState="true">
+            CellPadding="4" ForeColor="#333333" GridLines="None" Width="80%" EnableViewState="true"
+            EmptyDataText="Pas encore de contacts"
+            >
             <AlternatingRowStyle BackColor="White" />
             <Columns>
                 <asp:BoundField DataField="FirstName" HeaderText="First Name" SortExpression="FirstName" />
@@ -60,7 +62,7 @@
             </Columns>
             <EditRowStyle BackColor="#7C6F57" />
             <FooterStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
-            <HeaderStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
+            <HeaderStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="Green" />
             <PagerStyle BackColor="#666666" ForeColor="White" HorizontalAlign="Center" />
             <RowStyle BackColor="#E3EAEB" />
             <SelectedRowStyle BackColor="#C5BBAF" Font-Bold="True" ForeColor="#333333" />
